@@ -1,0 +1,110 @@
+# Nmap 7.92 scan initiated Thu Aug 25 16:12:15 2022 as: nmap -oN rpifront.txt -sV -p21-8080 --script vulners 192.168.0.201
+Nmap scan report for 192.168.0.201
+Host is up (0.0086s latency).
+Not shown: 8056 closed tcp ports (reset)
+PORT     STATE SERVICE     VERSION
+22/tcp   open  ssh         OpenSSH 8.4p1 Raspbian 5+deb11u1 (protocol 2.0)
+| vulners: 
+|   cpe:/a:openbsd:openssh:8.4p1: 
+|     	CVE-2021-28041	4.6	https://vulners.com/cve/CVE-2021-28041
+|     	CVE-2021-41617	4.4	https://vulners.com/cve/CVE-2021-41617
+|     	CVE-2020-14145	4.3	https://vulners.com/cve/CVE-2020-14145
+|     	CVE-2016-20012	4.3	https://vulners.com/cve/CVE-2016-20012
+|_    	CVE-2021-36368	2.6	https://vulners.com/cve/CVE-2021-36368
+139/tcp  open  netbios-ssn Samba smbd 4.6.2
+| vulners: 
+|   cpe:/a:samba:samba:4.6.2: 
+|     	SSV:93139	10.0	https://vulners.com/seebug/SSV:93139	*EXPLOIT*
+|     	SAMBA_IS_KNOWN_PIPENAME	10.0	https://vulners.com/canvas/SAMBA_IS_KNOWN_PIPENAME	*EXPLOIT*
+|     	SAINT:C50A339EFD5B2F96051BC00F96014CAA	10.0	https://vulners.com/saint/SAINT:C50A339EFD5B2F96051BC00F96014CAA	*EXPLOIT*
+|     	SAINT:6FE788CBA26F517C02B44A699047593B	10.0	https://vulners.com/saint/SAINT:6FE788CBA26F517C02B44A699047593B	*EXPLOIT*
+|     	SAINT:3579A721D51A069C725493EA48A26E42	10.0	https://vulners.com/saint/SAINT:3579A721D51A069C725493EA48A26E42	*EXPLOIT*
+|     	EXPLOITPACK:11BDEE18B40708887778CCF837705185	10.0	https://vulners.com/exploitpack/EXPLOITPACK:11BDEE18B40708887778CCF837705185	*EXPLOIT*
+|     	CVE-2017-7494	10.0	https://vulners.com/cve/CVE-2017-7494
+|     	1337DAY-ID-27859	10.0	https://vulners.com/zdt/1337DAY-ID-27859	*EXPLOIT*
+|     	1337DAY-ID-27836	10.0	https://vulners.com/zdt/1337DAY-ID-27836	*EXPLOIT*
+|     	CVE-2020-25719	9.0	https://vulners.com/cve/CVE-2020-25719
+|     	CVE-2020-25717	8.5	https://vulners.com/cve/CVE-2020-25717
+|     	CVE-2020-10745	7.8	https://vulners.com/cve/CVE-2020-10745
+|     	CVE-2017-14746	7.5	https://vulners.com/cve/CVE-2017-14746
+|     	CVE-2017-11103	6.8	https://vulners.com/cve/CVE-2017-11103
+|     	CVE-2021-3738	6.5	https://vulners.com/cve/CVE-2021-3738
+|     	CVE-2020-25722	6.5	https://vulners.com/cve/CVE-2020-25722
+|     	CVE-2020-25718	6.5	https://vulners.com/cve/CVE-2020-25718
+|     	CVE-2018-10858	6.5	https://vulners.com/cve/CVE-2018-10858
+|     	CVE-2019-14870	6.4	https://vulners.com/cve/CVE-2019-14870
+|     	CVE-2017-12151	5.8	https://vulners.com/cve/CVE-2017-12151
+|     	CVE-2017-12150	5.8	https://vulners.com/cve/CVE-2017-12150
+|     	CVE-2021-20277	5.0	https://vulners.com/cve/CVE-2021-20277
+|     	CVE-2020-27840	5.0	https://vulners.com/cve/CVE-2020-27840
+|     	CVE-2020-10704	5.0	https://vulners.com/cve/CVE-2020-10704
+|     	CVE-2017-15275	5.0	https://vulners.com/cve/CVE-2017-15275
+|     	CVE-2021-20254	4.9	https://vulners.com/cve/CVE-2021-20254
+|     	CVE-2019-14833	4.9	https://vulners.com/cve/CVE-2019-14833
+|     	CVE-2017-12163	4.8	https://vulners.com/cve/CVE-2017-12163
+|     	CVE-2016-2124	4.3	https://vulners.com/cve/CVE-2016-2124
+|     	CVE-2020-14383	4.0	https://vulners.com/cve/CVE-2020-14383
+|     	CVE-2020-14318	4.0	https://vulners.com/cve/CVE-2020-14318
+|     	CVE-2020-10760	4.0	https://vulners.com/cve/CVE-2020-10760
+|     	CVE-2020-10730	4.0	https://vulners.com/cve/CVE-2020-10730
+|     	CVE-2019-14847	4.0	https://vulners.com/cve/CVE-2019-14847
+|     	CVE-2018-16851	4.0	https://vulners.com/cve/CVE-2018-16851
+|     	CVE-2018-16841	4.0	https://vulners.com/cve/CVE-2018-16841
+|     	CVE-2018-14629	4.0	https://vulners.com/cve/CVE-2018-14629
+|     	CVE-2018-10919	4.0	https://vulners.com/cve/CVE-2018-10919
+|     	CVE-2019-14861	3.5	https://vulners.com/cve/CVE-2019-14861
+|     	PACKETSTORM:142782	0.0	https://vulners.com/packetstorm/PACKETSTORM:142782	*EXPLOIT*
+|     	PACKETSTORM:142715	0.0	https://vulners.com/packetstorm/PACKETSTORM:142715	*EXPLOIT*
+|     	PACKETSTORM:142657	0.0	https://vulners.com/packetstorm/PACKETSTORM:142657	*EXPLOIT*
+|_    	MSF:EXPLOIT-LINUX-SAMBA-IS_KNOWN_PIPENAME-	0.0	https://vulners.com/metasploit/MSF:EXPLOIT-LINUX-SAMBA-IS_KNOWN_PIPENAME-	*EXPLOIT*
+445/tcp  open  netbios-ssn Samba smbd 4.6.2
+| vulners: 
+|   cpe:/a:samba:samba:4.6.2: 
+|     	SSV:93139	10.0	https://vulners.com/seebug/SSV:93139	*EXPLOIT*
+|     	SAMBA_IS_KNOWN_PIPENAME	10.0	https://vulners.com/canvas/SAMBA_IS_KNOWN_PIPENAME	*EXPLOIT*
+|     	SAINT:C50A339EFD5B2F96051BC00F96014CAA	10.0	https://vulners.com/saint/SAINT:C50A339EFD5B2F96051BC00F96014CAA	*EXPLOIT*
+|     	SAINT:6FE788CBA26F517C02B44A699047593B	10.0	https://vulners.com/saint/SAINT:6FE788CBA26F517C02B44A699047593B	*EXPLOIT*
+|     	SAINT:3579A721D51A069C725493EA48A26E42	10.0	https://vulners.com/saint/SAINT:3579A721D51A069C725493EA48A26E42	*EXPLOIT*
+|     	EXPLOITPACK:11BDEE18B40708887778CCF837705185	10.0	https://vulners.com/exploitpack/EXPLOITPACK:11BDEE18B40708887778CCF837705185	*EXPLOIT*
+|     	CVE-2017-7494	10.0	https://vulners.com/cve/CVE-2017-7494
+|     	1337DAY-ID-27859	10.0	https://vulners.com/zdt/1337DAY-ID-27859	*EXPLOIT*
+|     	1337DAY-ID-27836	10.0	https://vulners.com/zdt/1337DAY-ID-27836	*EXPLOIT*
+|     	CVE-2020-25719	9.0	https://vulners.com/cve/CVE-2020-25719
+|     	CVE-2020-25717	8.5	https://vulners.com/cve/CVE-2020-25717
+|     	CVE-2020-10745	7.8	https://vulners.com/cve/CVE-2020-10745
+|     	CVE-2017-14746	7.5	https://vulners.com/cve/CVE-2017-14746
+|     	CVE-2017-11103	6.8	https://vulners.com/cve/CVE-2017-11103
+|     	CVE-2021-3738	6.5	https://vulners.com/cve/CVE-2021-3738
+|     	CVE-2020-25722	6.5	https://vulners.com/cve/CVE-2020-25722
+|     	CVE-2020-25718	6.5	https://vulners.com/cve/CVE-2020-25718
+|     	CVE-2018-10858	6.5	https://vulners.com/cve/CVE-2018-10858
+|     	CVE-2019-14870	6.4	https://vulners.com/cve/CVE-2019-14870
+|     	CVE-2017-12151	5.8	https://vulners.com/cve/CVE-2017-12151
+|     	CVE-2017-12150	5.8	https://vulners.com/cve/CVE-2017-12150
+|     	CVE-2021-20277	5.0	https://vulners.com/cve/CVE-2021-20277
+|     	CVE-2020-27840	5.0	https://vulners.com/cve/CVE-2020-27840
+|     	CVE-2020-10704	5.0	https://vulners.com/cve/CVE-2020-10704
+|     	CVE-2017-15275	5.0	https://vulners.com/cve/CVE-2017-15275
+|     	CVE-2021-20254	4.9	https://vulners.com/cve/CVE-2021-20254
+|     	CVE-2019-14833	4.9	https://vulners.com/cve/CVE-2019-14833
+|     	CVE-2017-12163	4.8	https://vulners.com/cve/CVE-2017-12163
+|     	CVE-2016-2124	4.3	https://vulners.com/cve/CVE-2016-2124
+|     	CVE-2020-14383	4.0	https://vulners.com/cve/CVE-2020-14383
+|     	CVE-2020-14318	4.0	https://vulners.com/cve/CVE-2020-14318
+|     	CVE-2020-10760	4.0	https://vulners.com/cve/CVE-2020-10760
+|     	CVE-2020-10730	4.0	https://vulners.com/cve/CVE-2020-10730
+|     	CVE-2019-14847	4.0	https://vulners.com/cve/CVE-2019-14847
+|     	CVE-2018-16851	4.0	https://vulners.com/cve/CVE-2018-16851
+|     	CVE-2018-16841	4.0	https://vulners.com/cve/CVE-2018-16841
+|     	CVE-2018-14629	4.0	https://vulners.com/cve/CVE-2018-14629
+|     	CVE-2018-10919	4.0	https://vulners.com/cve/CVE-2018-10919
+|     	CVE-2019-14861	3.5	https://vulners.com/cve/CVE-2019-14861
+|     	PACKETSTORM:142782	0.0	https://vulners.com/packetstorm/PACKETSTORM:142782	*EXPLOIT*
+|     	PACKETSTORM:142715	0.0	https://vulners.com/packetstorm/PACKETSTORM:142715	*EXPLOIT*
+|     	PACKETSTORM:142657	0.0	https://vulners.com/packetstorm/PACKETSTORM:142657	*EXPLOIT*
+|_    	MSF:EXPLOIT-LINUX-SAMBA-IS_KNOWN_PIPENAME-	0.0	https://vulners.com/metasploit/MSF:EXPLOIT-LINUX-SAMBA-IS_KNOWN_PIPENAME-	*EXPLOIT*
+4369/tcp open  epmd        Erlang Port Mapper Daemon
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Aug 25 16:12:29 2022 -- 1 IP address (1 host up) scanned in 14.27 seconds
